@@ -1,0 +1,2 @@
+﻿NY,New York
+NJ,New Jersey
