@@ -275,7 +275,7 @@ public class Form1 extends JFrame {
                                 String value1 = value;
 
                                 if (c.getCodes() != null && c.getCodes().ContainsKey(value1))
-                                    value1 = value1 + " : " + c.getCodes().get_Item(value1,String.class);
+                                    value1 = value1 + " : " + c.getCodes().get_ItemProperty(value1,String.class);
 
                                 codeNode.setUserObject(value1);
                             }
@@ -299,12 +299,12 @@ public class Form1 extends JFrame {
                         String value1 = value;
 
                         if (element.getCodes() != null && element.getCodes().ContainsKey(value1))
-                            value1 = value1 + " : " + element.getCodes().get_Item(value1,String.class);
+                            value1 = value1 + " : " + element.getCodes().get_ItemProperty(value1,String.class);
                         else
                         {
                             if (element.getCodeList() != null && element.getCodeList().getCodes().ContainsKey(value1))
                             {
-                                value1 = value1 + " : " + element.getCodeList().getCodes().get_Item(value1,String.class).getDescription();
+                                value1 = value1 + " : " + element.getCodeList().getCodes().get_ItemProperty(value1,String.class).getDescription();
 
                             }
                         }
