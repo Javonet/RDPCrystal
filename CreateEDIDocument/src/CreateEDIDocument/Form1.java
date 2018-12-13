@@ -41,7 +41,7 @@ public class Form1 extends JFrame {
 	private JTextArea txtEDIFile;
 	
 	public Form1() {
-		Activation.setLicense("dpooran@rdpcrystal.com", "z8X4-e3RE-n9BG-r2PM-Ky6e");
+		Activation.setLicense("lberwid@sdncenter.pl", "Jm9a-Mr78-Hi5x-r4P5-x2SJ");
 		Activation.initializeJavonet(); //TODO: temporarily required to be removed in final version
 		InitializeComponents();
 
@@ -248,7 +248,8 @@ public class Form1 extends JFrame {
             iea.setNumberOfIncludedFunctionalGroups("1");
   
             //Generate the EDI file
-            String ediData = sampleEDIFile.ToEDIString(new Delimiters());
+            Delimiters d = new Delimiters();
+            String ediData = sampleEDIFile.ToEDIString(d);
 
             txtEDIFile.setText(ediData);
         }

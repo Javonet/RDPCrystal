@@ -39,7 +39,7 @@ public class Form1 extends JFrame {
     private RDPCrystalEDILibrary.EDIFileScrubber ediFileScrubber1;
 
 	public Form1() throws IOException {
-		Activation.setLicense("dpooran@rdpcrystal.com", "z8X4-e3RE-n9BG-r2PM-Ky6e");
+		Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
 		Activation.initializeJavonet(); //TODO: temporarily required to be removed in final version
 		InitializeComponents();
 

@@ -6,7 +6,7 @@ import RDPCrystalEDILibrary.EDISpecification;
 public class Program {
 
 	public static void main(String[] args) {
-		Activation.setLicense("dpooran@rdpcrystal.com", "z8X4-e3RE-n9BG-r2PM-Ky6e");
+		Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
 		// TODO Auto-generated method stub
         EDISpecification spec = EDISpecification.FindSpecificationFromFile("EDIFiles//SampleEDIFACT.txt");
 
