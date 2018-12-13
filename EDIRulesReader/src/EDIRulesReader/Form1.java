@@ -44,9 +44,10 @@ public class Form1 extends JFrame {
     private DefaultMutableTreeNode treeNode = new DefaultMutableTreeNode("Root");
 
 	public Form1() throws IOException {
-		Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
-		Activation.initializeJavonet(); //TODO: temporarily required to be removed in final version
-		InitializeComponents();
+//please go to javonet to register for a free trial and get your javonet serial number at : my.javonet.com/signin?type=free 
+        Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
+        Activation.initializeJavonet();
+        InitializeComponents();
 
 		RDPCrystalEDILibrary.PackageLicense.setKey("Enter Serial Number Here");
 	}

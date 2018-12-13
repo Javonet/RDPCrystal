@@ -38,9 +38,10 @@ public class Form1 extends JFrame {
 	private JTextField txtEDIFileLocation;
 	
 	public Form1() {
-		Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
-		Activation.initializeJavonet(); //TODO: temporarily required to be removed in final version
-		InitializeComponents();
+//please go to javonet to register for a free trial and get your javonet serial number at : my.javonet.com/signin?type=free 
+        Activation.setLicense("<your_email>", "<your_javonet_serialnumber");
+        Activation.initializeJavonet();
+        InitializeComponents();
 
 		RDPCrystalEDILibrary.PackageLicense.setKey("Enter Serial Number Here");
 
